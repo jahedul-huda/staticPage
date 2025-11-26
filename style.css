@@ -1,0 +1,99 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #f7f7f7;
+	color: #333;
+}
+
+header {
+	background: #004466;
+	color: white;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+/* Periodic Table Grid */
+.periodic-table {
+	display: grid;
+	grid-template-columns: repeat(18, 50px);
+	gap: 5px;
+	justify-content: center;
+	margin: 20px auto;
+	max-width: 1024px;
+}
+
+.element {
+	border: 1px solid #333;
+	padding: 10px;
+	background: #e6f7ff;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.element span {
+	display: block;
+	font-size: 0.7em;
+	color: #666;
+}
+
+.spacer {
+	grid-column: span 16;
+}
+
+.spacer2 {
+	grid-column: span 5;
+}
+
+.spacer3 {
+	grid-column: span 4;
+}
+
+.spacer4 {
+	grid-column: span 10;
+}
+
+/* Periodic image (hidden by default) */
+.periodic-image {
+	display: none;
+	margin: 20px;
+}
+
+.periodic-image img {
+	max-width: 100%;
+	height: auto;
+	border: 3px solid #333;
+	border-radius: 6px;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 768px) {
+	body {
+		background: #222; /* background color change */
+		color: white; /* text color change */
+	}
+
+	h1 {
+		font-size: 1.5em; /* adjust font size */
+	}
+
+	.periodic-table {
+		display: none; /* hide grid table */
+	}
+
+	.periodic-image {
+		display: block; /* show image instead */
+	}
+}
+
+footer {
+	background: #004466;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+}
